@@ -1,0 +1,95 @@
+body{
+    background-image: url('../../img/wallpaperflare.com_wallpaper.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.kamera {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Membuat 4 kolom dengan ukuran sama */
+    gap: 20px;
+    margin: 200px;
+    margin-top: 70px;
+  }
+  
+  .kamera > div {
+    display: flex;
+    justify-content: center; /* Menengahkan konten secara horizontal */
+    align-items: center; /* Menengahkan konten secara vertikal */
+    overflow: hidden; /* Mencegah gambar meluap keluar div */
+  }
+  
+  .kamera img {
+    width: 269px; /* Membuat gambar memenuhi div parent-nya */
+    height: 251px; /* Menjaga aspek rasio gambar */
+    border: 4px solid #000000;
+    max-width: 100;
+    object-fit: cover;
+  }
+  
+.kamera-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+    .kembali {
+        position: absolute;
+        margin-top: 850px;
+        justify-items: center;
+      };
+/* =========================
+   MOBILE iOS / ANDROID
+   ========================= */
+@media screen and (max-width: 768px) {
+
+  body {
+    background-position: center;
+    background-attachment: scroll; /* penting untuk iOS */
+  }
+
+  .kamera {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom di HP */
+    gap: 15px;
+    margin: 20px;
+    margin-top: 80px;
+  }
+
+  .kamera img {
+    width: 100%;
+    height: 160px;
+    border-width: 3px;
+  }
+
+  .kamera > div {
+    width: 100%;
+  }
+
+  .kamera-group {
+    padding: 10px;
+  }
+
+  .kembali {
+    position: static;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+/* =========================
+   iPhone kecil (SE / Mini)
+   ========================= */
+@media screen and (max-width: 480px) {
+
+  .kamera {
+    grid-template-columns: 1fr; /* 1 kolom di layar sangat kecil */
+    gap: 12px;
+    margin: 15px;
+    margin-top: 60px;
+  }
+
+  .kamera img {
+    height: 180px;
+  }
+}

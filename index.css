@@ -1,0 +1,122 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg-image {
+  /* Membuat div.fullscreen meliputi seluruh layar */
+  background-image: url('img/wallpaperflare.com_wallpaper.jpg');
+  /* Mengatur background agar menutupi seluruh area div */
+  background-size: cover;
+  /* Mengatur posisi background */
+  background-position: center;
+  /* Mengatur div agar meliputi seluruh layar */
+  height: 100%;
+  /* Menambahkan posisi relatif kepada background agar konten lain bisa ditambahkan di atasnya */
+  position: relative;
+}
+
+
+  .home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95%;
+  }
+
+
+.kembali {
+  position: absolute;
+  bottom: 50px;
+  justify-items: center;
+}
+.home p{
+  text-align: center;
+  font-size: 25px;
+}
+
+.asc{
+  align-items: center;
+  color: rgba(7, 4, 7, 0.829);
+  text-align: center;
+  font-size: 25px;
+  position: absolute;
+  margin-left: 100px;
+}
+
+.page1{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 220px;
+  
+}
+.foto1{
+  height: 250px;
+  margin-bottom: -50px;
+  
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+   ========================= */
+@media (max-width: 768px) {
+
+  body, html {
+    height: 100%;
+  }
+
+  .bg-image {
+    background-position: center;
+    height: 100vh;
+  }
+
+  .home {
+    height: 100%;
+    padding: 20px;
+  }
+
+  .home p {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  .asc {
+    position: static;
+    margin-left: 0;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .page1 {
+    padding-top: 120px;
+  }
+
+  .foto1 {
+    height: 180px;
+    margin-bottom: -20px;
+  }
+
+  .kembali {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Extra kecil (HP kecil) */
+@media (max-width: 480px) {
+
+  .home p {
+    font-size: 16px;
+  }
+
+  .asc {
+    font-size: 16px;
+  }
+
+  .foto1 {
+    height: 150px;
+  }
+}
