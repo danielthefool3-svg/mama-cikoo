@@ -1,4 +1,6 @@
-# web-valentine-card
-all this is for learning
+# Mama Cikoo
 
-demo https://andresyaputra.github.io/web-valentine-card/
+Project Buat Mama Ciko.
+
+Demo:
+https://danielthefool3-svg.github.io/mama-cikoo/
